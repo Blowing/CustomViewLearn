@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.wujie.customviewlearn.MainActivity">
+
+    <!--<com.wujie.customviewlearn.CustomView-->
+        <!--android:id= "@+id/custom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:customViewColor="@android:color/black"-->
+        <!--app:customViewRadius="30dp"/>-->
+    <!--<com.wujie.customviewlearn.CustomView-->
+
+        <!--android:id="@+id/custom1"-->
+        <!--android:paddingTop="100dp"-->
+
+        <!--android:layout_below="@id/custom"-->
+        <!--android:paddingRight="40dp"-->
+        <!--android:layout_width="wrap_content"-->
+
+
+        <!--android:layout_height="wrap_content"-->
+        <!--app:customViewColor="@android:color/holo_red_dark"-->
+        <!--app:customViewRadius="30dp" />-->
+    <!--<Button-->
+        <!--android:id="@+id/btn"-->
+        <!--android:layout_below="@id/custom1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="试试加好"/>-->
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        />
+
+    <LinearLayout
+        android:layout_below="@id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/icon_text1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="40sp"
+            android:textColor="@drawable/click"
+
+            />
+        <TextView
+            android:id="@+id/icon_text2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="40sp"
+            android:textColor="@drawable/click"
+            />
+        <TextView
+            android:id="@+id/icon_text3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="40sp"
+            android:textColor="@drawable/click"
+            />
+        <TextView
+            android:id="@+id/icon_text4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="40sp"
+            android:textColor="@drawable/click"
+            />
+        <TextView
+            android:id="@+id/icon_text5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="40sp"
+            android:textColor="@drawable/click"
+            />
+        <TextView
+            android:id="@+id/icon_text6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="40sp"
+            android:textColor="@drawable/click"
+
+            />
+
+
+    </LinearLayout>
+
+    <com.wujie.customviewlearn.HeartProgressBar
+        android:id="@+id/heartprogress"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:heartColor="@color/colorAccent"
+        />
+        <!--android:layout_below="@id/btn"-->
+    <com.wujie.customviewlearn.BallView
+        android:id="@+id/ball"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    app:customViewColor="@android:color/black"
+
+    />
+
+
+</RelativeLayout>

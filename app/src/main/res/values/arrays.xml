@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icons"></string>
+
+    <string-array name="icon_array">
+        <item>&#xe652;</item>
+        <item>&#xe653;</item>
+        <item>&#xe654;</item>
+        <item>&#xe655;</item>
+        <item>&#xe656;</item>
+        <item>&#xe657;</item>
+    </string-array>
+</resources>
