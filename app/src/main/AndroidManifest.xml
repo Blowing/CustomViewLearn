@@ -10,17 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="unspecified">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PieViewActivity">
-
-        </activity>
+        <activity android:name=".PieViewActivity" />
         <activity android:name=".CheckViewActivity" />
-
-        <activity android:name=".activity.RadarViewActivity"></activity>
+        <activity android:name=".activity.RadarViewActivity" />
+        <activity android:name=".activity.MagicCircleActivity" />
+        <activity android:name=".activity.WaveViewActivity"></activity>
     </application>
 </manifest>
