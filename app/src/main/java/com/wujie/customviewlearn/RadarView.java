@@ -6,6 +6,7 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -56,16 +57,28 @@ public class RadarView extends View {
         centerX = MeasureSpec.getSize(widthMeasureSpec) / 2;
         centerY = MeasureSpec.getSize(heightMeasureSpec) / 2;
         radius  = (float) (Math.min(centerX, centerY)  * 0.9);
+        Log.i("wuwu", "onMeasure");
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
+        centerX = MeasureSpec.getSize(w) / 2;
+        centerY = MeasureSpec.getSize(h) / 2;
+        radius  = (float) (Math.min(centerX, centerY)  * 0.9);
+        Log.i("wuwu", "sizeChanged");
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+        super.onLayout(changed, left, top, right, bottom);
+        Log.i("wuwu", "onLayout");
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
+        Log.i("wuwu", "onDraw");
         canvas.translate(centerX, centerY);
         drawPolygon(canvas);
         drawLine(canvas);

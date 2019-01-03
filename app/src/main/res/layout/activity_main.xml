@@ -11,5 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="雷达图"/>
-
+    <Button
+        android:id="@+id/btn_magic_circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="魔法球"/>
+    <Button
+        android:id="@+id/btn_wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="水波纹扩散"/>
 </LinearLayout>
