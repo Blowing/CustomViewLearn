@@ -15,6 +15,12 @@ public class Circle extends View {
     private Paint paint;
     private int maxRadius = 200;
 
+    private int defaultWidth = 400; // px
+    private int defaultHeight = 400; // px
+
+    private int w; // 实际View的宽度
+    private int h; // 实际View的高度
+
     private int color = 0xFFfe626d;
 
     public Circle(Context context) {
@@ -41,19 +47,33 @@ public class Circle extends View {
 
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+//        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int widthSize = MeasureSpec.getSize(widthMeasureSpec);
+        int widthMode = MeasureSpec.getMode(widthMeasureSpec);
+
+        int heightSize = MeasureSpec.getSize(heightMeasureSpec);
+        int heightMode = MeasureSpec.getMode(heightMeasureSpec);
+
+        w = (widthMode == MeasureSpec.AT_MOST ? Math.min(defaultWidth, widthSize) : widthSize);
+        h = (heightMode == MeasureSpec.AT_MOST ? Math.min(defaultHeight, heightSize) : heightSize);
+        setMeasuredDimension(w, h);
+
     }
 
     @Override
     protected void onSizeChanged(int w, int h, int oldw, int oldh) {
         super.onSizeChanged(w, h, oldw, oldh);
-
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawCircle(200, 200 , radius, paint);
+        int pLeft = getPaddingLeft();
+        int pRight = getPaddingRight();
+        int pTop = getPaddingTop();
+        int pBottom = getPaddingBottom();
+//        radius = Math.min(Math.min((w-pLeft -pRight)/ 2, (h-pTop-pBottom)/2), radius);
+        canvas.drawCircle((w-pLeft -pRight)/2 + pLeft, (h-pTop-pBottom)/2+ pTop , radius, paint);
 
     }
 

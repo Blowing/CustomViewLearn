@@ -19,6 +19,7 @@
 
     <com.wujie.customviewlearn.view.WaveView
         android:id="@+id/waveView"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

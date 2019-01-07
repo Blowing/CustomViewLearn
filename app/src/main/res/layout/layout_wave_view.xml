@@ -6,16 +6,17 @@
 
     <com.wujie.customviewlearn.view.Circle
         android:id="@+id/circle1"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <com.wujie.customviewlearn.view.Circle
         android:id="@+id/circle2"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <com.wujie.customviewlearn.view.Circle
         android:id="@+id/circle3"
-        android:layout_width="300dp"
-        android:layout_height="300dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </RelativeLayout>

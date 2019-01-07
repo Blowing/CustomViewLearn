@@ -11,4 +11,5 @@
     <declare-styleable name="RadarView">
         <attr name="count" format="integer"/>
     </declare-styleable>
+
 </resources>

@@ -34,13 +34,19 @@ public class WaveView extends RelativeLayout {
 
 
     @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    }
+
+    @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
         circle1 = findViewById(R.id.circle1);
         circle2 = findViewById(R.id.circle2);
         circle3 = findViewById(R.id.circle3);
-
     }
+
+
 
     public void startAnimation() {
         if (animatorSet == null) {
@@ -51,7 +57,6 @@ public class WaveView extends RelativeLayout {
             objectAnimator.setDuration(1500);
             objectAnimator.setRepeatMode(ValueAnimator.RESTART);
             objectAnimator.setRepeatCount(ValueAnimator.INFINITE);
-
 
             ObjectAnimator objectAnimator1 = objectAnimator.clone();
             objectAnimator1.setTarget(circle2);
