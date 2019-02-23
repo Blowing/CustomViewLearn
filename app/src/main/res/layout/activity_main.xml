@@ -21,4 +21,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="水波纹扩散"/>
+    <Button
+        android:id="@+id/btn_primaryColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片色彩修改"/>
 </LinearLayout>

@@ -23,6 +23,7 @@ public class WaveView extends RelativeLayout {
     private Circle circle3;
     private AnimatorSet animatorSet;
 
+
     public WaveView(Context context) {
         this(context, null);
     }

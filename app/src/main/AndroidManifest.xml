@@ -22,6 +22,8 @@
         <activity android:name=".CheckViewActivity" />
         <activity android:name=".activity.RadarViewActivity" />
         <activity android:name=".activity.MagicCircleActivity" />
-        <activity android:name=".activity.WaveViewActivity"></activity>
+        <activity android:name=".activity.WaveViewActivity" />
+        <activity android:name=".activity.Main2Activity" />
+        <activity android:name=".activity.PrimaryColorActivity"></activity>
     </application>
 </manifest>

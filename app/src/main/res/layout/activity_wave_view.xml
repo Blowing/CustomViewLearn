@@ -16,6 +16,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="取消动画"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textIsSelectable="true"
+        android:text="你好你是谁"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:imeOptions="actionSearch"/>
 
     <com.wujie.customviewlearn.view.WaveView
         android:id="@+id/waveView"

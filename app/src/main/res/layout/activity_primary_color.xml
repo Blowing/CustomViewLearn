@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PrimaryColorActivity"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/primary_iv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <SeekBar
+        android:id="@+id/rotate_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <SeekBar
+        android:id="@+id/saturation_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:tag="饱和度"/>
+
+    <SeekBar
+        android:id="@+id/lum_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+
+
+
+
+</LinearLayout>

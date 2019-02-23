@@ -24,6 +24,7 @@ public class WaveViewActivity extends AppCompatActivity implements View.OnClickL
         switch (v.getId()) {
             case R.id.btn_start:
                 waveView.startAnimation();
+
                 break;
             case R.id.btn_cancel:
                 waveView.cancelAnimation();
@@ -38,4 +39,17 @@ public class WaveViewActivity extends AppCompatActivity implements View.OnClickL
             waveView.cancelAnimation();
         }
     }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        setResult(34);
+        finish();
+    }
+
+//    @Override
+//    public void onBackPressed() {
+//        setResult(RESULT_OK);
+//        super.onBackPressed();
+//    }
 }
